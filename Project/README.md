@@ -21,7 +21,9 @@ Data for BMI will be taken from the World Health Organization's database of Prev
 
 # A list of internal milestones up until project milestone 2
 11/11 - Experiment with the data and decide which data to use.
-28/11 – Divide the food data by categories and decide on how to classify how healthy the food is.    
+
+28/11 – Divide the food data by categories and decide on how to classify how healthy the food is.   
+
 25/11 – Compare the food from US and France and investigate the similarities and differences. See if it correlates with the health indices. 
 
 
