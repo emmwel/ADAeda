@@ -20,7 +20,10 @@ The database is in the csv format and the size is around 1.6 GB, meaning that we
 Data for BMI will be taken from the World Health Organization's database of Prevalence of overweight and obesity among adults by country. These are two tables which display the percentage of the population which have a BMI-index of over 25 or 30 respectively. Further population health data regarding for example diabetes in the two countries will also be retrieved from WHO.
 
 # A list of internal milestones up until project milestone 2
-Add here a sketch of your planning for the next project milestone.
+11/11 - Experiment with the data and decide which data to use.
+28/11 – Divide the food data by categories and decide on how to classify how healthy the food is.    
+25/11 – Compare the food from US and France and investigate the similarities and differences. See if it correlates with the health indices. 
+
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+Is our scope okey or is it narrow?
