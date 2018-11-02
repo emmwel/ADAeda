@@ -1,4 +1,4 @@
-# Title
+# The food championship - France VS USA
 
 # Abstract
 We all need to eat to live, but how many of us live to eat? According to World Health Organization (WHO), obesity is increasing. In 2016 39% of adults worldwide were overweight and 13% were obese. We would like to investigate how nutritional content in food affects the health of the population of two different countries, USA and France. We will use the Open Food Facts database for this project. 
@@ -29,3 +29,4 @@ Data for BMI will be taken from the World Health Organization's database of Prev
 
 # Questions for TAa
 Is our scope okey or is it narrow?
+Is our title ok or should it be more serious?
