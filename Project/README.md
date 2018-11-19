@@ -13,7 +13,6 @@ Is there a nutritional difference in food targeted to difference age groups?
 Which country have the “best” food in the perspective of nutrition, fat, carbs, sugar and food additives in different categories? The categories will be food type specific such as bread, cereals or semifinished dishes. 
 
 # Dataset
-List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 We will be using the Open Food Facts database. This is an open database consisting of information of over 600000 food products, where anybody can add a product and facts about it. The database has around 437000 products which are sold in France and around 175000 products which are sold in the United States. There is a lot of different parameters that can potentially be included for each product, but as different products have different amount of product specification on the packaging, the amount of information will vary greatly between each product. We will primarily be looking at the nutrition facts, which is something that exists for the vast majority of the products. There is also a nutrition grade value called NutriScore for some of the products. This is something we might be able to use as well. Each product are tagged with the categories that they are in, making it convenient for us to use categories to do comparisons. An other interesting parameter that we could use is serving size, given that a sufficient amount of products have it.
 The database is in the csv format and the size is around 1.6 GB, meaning that we will not need Spark.
 
@@ -21,10 +20,8 @@ Data for BMI will be taken from the World Health Organization's database of Prev
 
 # A list of internal milestones up until project milestone 2
 11/11 - Experiment with the data and decide which data to use.
-
 28/11 – Divide the food data by categories and decide on how to classify how healthy the food is.   
-
-25/11 – Compare the food from US and France and investigate the similarities and differences. See if it correlates with the health indices. 
+5/12 – Compare the food from US and France and investigate the similarities and differences. See if it correlates with the health indices. 
 
 
 # Questions for TAa
