@@ -23,7 +23,7 @@ The World Health Organization's database has been used to gain some reference va
 These values will be used to deepen the research and give a new dimension of the results. 
 
 # Food categories
-Initially 4 categories will be used; “Dairy”, “Snacks”, “Bread and Dry goods” and “Meat, Poultry, Fish, Seafood, etc.” 
+Initially 5 categories will be used; “Dairy”, “Snacks”, “Bread and Dry goods”, “Fats”  and “Meat, Poultry, Fish, Seafood, etc.” 
 The categories might be extended and modified as the project continues. 
 
 # Project limitations
