@@ -23,8 +23,8 @@ The World Health Organization's database has been used to gain some reference va
 These values will be used to deepen the research and give a new dimension of the results. 
 
 # Food categories
-Initially 4 categories will be used; “Diary”, “Snacks”, “Bread and Dry goods” and “Meat, Poultry, Fish, Seafood, etc.” 
-The categories might be extended as the project continues. 
+Initially 4 categories will be used; “Dairy”, “Snacks”, “Bread and Dry goods” and “Meat, Poultry, Fish, Seafood, etc.” 
+The categories might be extended and modified as the project continues. 
 
 # Project limitations
 Originally the idea was to investigate nutrient differences between products targeted towards different age groups. However, since there was no possibility to extract information regarding the age groups from the food data, this focus point was rejected. 
