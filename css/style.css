@@ -1,0 +1,55 @@
+body{
+    width: 99%;
+    height: 100%;
+    font-family: 'Muli', sans-serif;
+}
+
+.content{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+}
+
+#header{
+    text-align: center;
+}
+
+.headImg{
+    display:inline-block;
+    margin: 0 10%;
+}
+
+#menu{
+    text-align: center;
+    background-color: rgb(211, 255, 255);
+    height: 40px;
+    padding-top: 20px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+.sticky + .content {
+    padding-top: 70px;
+}
+.menuLinks{
+    text-decoration: none;
+    color: black;
+    margin: 0 2vw;
+    padding-top:1vw;
+}
+.distributionFigure{
+    width: 70%;
+    margin: auto;
+}
+.fatsFig{
+    width: 30vw;
+    display: inline-block;
+    margin: auto;  
+}
+.plotText{
+    width: 30vw;
+    display: inline-block;
+    margin: auto;
+}
