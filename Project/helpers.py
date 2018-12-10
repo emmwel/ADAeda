@@ -38,3 +38,25 @@ def re_arrange_for_boxplot(df,country):
             new_df = new_df.append(newRow)
         
     return new_df
+
+custom_style_france_first = Style(
+    background='transparent',
+    plot_background='#FFFFFF',
+    font_family='googlefont:Muli',
+    title_font_size=14,
+    opacity='.7',
+    opacity_hover='.95',
+    transition='400ms ease-in',
+    colors=('#002395', '#B22234')
+)
+
+custom_style_usa_first = Style(
+    background='transparent',
+    plot_background='#FFFFFF',
+    font_family='googlefont:Muli',
+    title_font_size=14,
+    opacity='.7',
+    opacity_hover='.95',
+    transition='400ms ease-in',
+    colors=('#B22234', '#002395')
+)
