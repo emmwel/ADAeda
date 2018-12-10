@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import functools
 import re
+from pygal.style import Style
 
 
 def select_entries(df, tag_list):
