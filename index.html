@@ -51,14 +51,14 @@
             </p>
             <p>
                 In this data analysis, health statistics from two different countries, France and the USA, will be compared in combination with nutritional facts
-                about packaged foods sold in these countries. In the analysis we will discover whether the nutritional facts, for example high sugar content, can be
-                said to attribute to health statistics.
+                about packaged foods sold in these countries. In the analysis we will investigate whether the nutritional information,
+                for example high sugar content, can be said to contribute to the health statistics.
             </p>
 
             <h3>Health statistics</h3>
             <p>
                 WHO has compiled several statistics regarding health and obesity for most countries in the world. 
-                A subset will be used in the analysis which can be seen in Table 1.
+                A subset of the statistics will be used in the analysis, and the chosen ones can be seen in Table 1.
             </p>
             <div class="parent-table-container">
                 <div class="table-container">
@@ -170,6 +170,34 @@
                 </div>
             </div>
             <p class="table-caption">Table 1: Health statistics of France and USA</p>
+            <p style="color: red">Säga något mer??</p>
+            <h3>Data</h3>
+            <p>
+               The dataset used to get nutritional facts about packaged foods in this analysis is the Open Food Facts database. The database is non-profit open
+               database, which means anyone all over the world can use the data and contribute to the database. In the database, there exists 459371 products from 
+               France and 175661 products from the USA, which we divided in to two datasets, one for each country. We also downsampled the France dataset as it is
+               significantly larger than the USA dataset.
+            </p>
+            <p>
+                We worked with features regarding nutriments, such as energy per a 100g and sugars per a 100g, as well as product names and food categories. Names and
+                food categories was used to categorize the data so we could compare nutritional values between the two countries with products in the same category.
+                This was to make sure the comparisions would make sense: comparing the sugar content of a lollipop from the USA with the sugar content of a soup from
+                France would not give a true 
+            </p>
+            <p>
+                While the open nature of the database generates a lot of data, the contributions are, as of yet, not automatically checked. This generates a lot of
+                missing values in the dataset, as well as errors and inconsistencies. Our process for cleaning the data was:
+            </p>
+            <ul>
+                <li>Remove all rows in which all columns had no values</li>
+                <li>Remove all rows where no product name or product category was defined</li>
+                <li>Set all nutriments to be a value between 0 and 100</li>
+            </ul>
+            <p>
+                The last point was important because no nutriment can be more than a 100% of a product. Since each nutriment is defined per 100g, we set that the
+                range should be between 0 and a 100. The only nutriment features we did not do this for was carbohydrates_100g and energy_100g, as they can be
+                more than a 100 for a 100g.
+            </p>
         </div>
         <hr>
         <div id="fats">
