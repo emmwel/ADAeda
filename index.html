@@ -30,7 +30,7 @@
                     <a href="#snacks">Snacks</a>
                 </span>
             </div>
-          </div>
+        </div>
         <a class="menuLinks" href="#goal">Finish line</a>
     </div>
 
@@ -182,7 +182,7 @@
                 We worked with features regarding nutriments, such as energy per a 100g and sugars per a 100g, as well as product names and food categories. Names and
                 food categories was used to categorize the data so we could compare nutritional values between the two countries with products in the same category.
                 This was to make sure the comparisions would make sense: comparing the sugar content of a lollipop from the USA with the sugar content of a soup from
-                France would not give a true 
+                France would not give a true image of our data.
             </p>
             <p>
                 While the open nature of the database generates a lot of data, the contributions are, as of yet, not automatically checked. This generates a lot of
@@ -198,6 +198,35 @@
                 range should be between 0 and a 100. The only nutriment features we did not do this for was carbohydrates_100g and energy_100g, as they can be
                 more than a 100 for a 100g.
             </p>
+            <h3>Food categories</h3>
+            <p>
+                To compare different kinds of food, we created food categories. These were based on categories in the dataset that we decided to compile together.
+                Our five categories are:
+            </p>
+            <ul>
+                <li>Fats</li>
+                <li>Meat, poultry, fish</li>
+                <li>Dairy</li>
+                <li>Bread</li>
+                <li>Snacks</li>
+            </ul>
+            <p>
+                Some of these categories are divided in to subcategories as well, for example the category Snacks is divided in to the subcategories Sugary snacks and
+                Salty snacks. For each category, we have chosen different nutriments to focus on, such as sugars per 100g for Sugary snacks.
+            </p>
+            <p>
+                To classify our data into categories, we needed to define what kind of products that matched each category. Let's look at the category Fats as an
+                example. First, we defined words that are associated with fats, such as butter and oil. We also made sure to use both English and French words to make
+                sure to get as many matches as possible. Then, both datasets were queried to see the results of the filtering. If the results contained products we did
+                not want, we defined words that were not fats. As an example, popcorn contains butter, but is not in itself a fat, so we filtered away all rows which
+                had the word popcorn in the product name or category type.
+            </p>
+            <p>
+                We will visualize the categories, their distribution and nutriment values to investigate what the products contain. France is represented by the color
+                blue and the USA by the color red.
+            </p>
+            <p style="color: red">Behövs någon form av vidareledning in till visualiseringen av kategorierna</p>
+
         </div>
         <hr>
         <div id="fats">
@@ -244,6 +273,49 @@
         <hr>
         <div id="snacks">
             <h2>Snacks</h2>
+            <p>
+                This category is divided in to two subcategories, Sugary snacks and Salty snacks. These also have smaller categories within themselves, such as
+                Chocolates in Sugary snacks. In this category we have focused on looking at the distribution of the nutriments sugars per 100g and energy per 100g. 
+            </p>
+            <h3>Sugary snacks</h3>
+            <div class="distribution-div">            
+                <figure class="distribution-fig">
+                    <embed type="image/svg+xml" src="img/sugary_snacks_distribution.svg" />
+                </figure>
+                <p class="distribution-description">
+                    In the graph the distribution of the subcategories in Sugary snacks is shown. As we can see, Chocolates are in the majority for both countries.
+                    However France still has a higher percentage of Chocolates than the USA does. 
+                </p>
+                <p class="distribution-description">
+                    Candy is the smallest category for both countries, which might have something to do with that we filtered out all candy with chocolate from the
+                    category...
+                </p>
+                <p class="distribution-description">
+                    Hover over the bars to see the exact percentage of each category!
+                </p>
+            </div>
+            <p>
+                For sugary snacks, we looked closer at the feature sugars per 100g.
+            </p>
+            <div class="nutri-dropdown">
+                <button class="dropbtn">
+                    Nutriments
+                </button>
+                <div class="dropdown-content-nutri">
+                    <a href="#fats">Sugars per 100g</a>
+                    <a href="#meat">Energy per 100g</a>
+                </div>
+            </div>
+
+            <figure class="snacks-nutri-fig">
+                <embed type="image/svg+xml" src="img/snacks_sugars.svg" />
+            </figure>
+            <p>
+                Hovering over the boxes in the boxplot will show facts about the nutriment. The max for both are 100, but this is most likely higher values that we
+                sampled down to 100. The most interesting part is not the outliers, but rather the values within the box. USA has in general higher sugar per 100g
+                than France does, but the difference is minimal.
+            </p>
+
         </div>
         <hr>
         <div id="goal">
