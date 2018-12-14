@@ -398,26 +398,20 @@
         <div id="snacks">
             <h2>Snacks</h2>
             <p>
+                
                 This category is divided in to two subcategories, Sugary snacks and Salty snacks. These also have smaller categories within themselves, such as
-                Chocolates in Sugary snacks.
+                Chocolates in Sugary snacks. The total amount of snacks in the France dataset was 22 364 while the USA had 31 544 entries. At the moment it is hard
+                to know if this depends on the products added to the database or if the USA genuinely has more snacks than France does.
             </p>
             <h3>Sugary snacks</h3>
-            <div class="distribution-div">            
-                <figure class="distribution-fig">
-                    <embed type="image/svg+xml" src="img/sugary_snacks_distribution.svg" />
-                </figure>
-                <p class="distribution-description">
-                    In the graph the distribution of the subcategories in Sugary snacks is shown. As we can see, Chocolates are in the majority for both countries.
-                    However France still has a higher percentage of Chocolates than the USA does. 
-                </p>
-                <p class="distribution-description">
-                    Candy is the smallest category for both countries, which might have something to do with that we filtered out all candy with chocolate from the
-                    category...
-                </p>
-                <p class="distribution-description">
-                    Hover over the bars to see the exact percentage of each category!
-                </p>
-            </div>
+            <p>
+                In the graph the distribution of the subcategories in Sugary snacks is shown. France had a total of 18 164 sugary snacks and the USA has 11 177.
+                As we can see, Chocolates are in the majority for both countries. However France still has a higher percentage of Chocolates than the USA does.
+                Candy is the smallest category for both countries.
+            </p>        
+            <figure class="distributionFigure">
+                <embed type="image/svg+xml" src="img/sugary_snacks_distribution.svg" />
+            </figure>
             <p>
                 For sugary snacks, we looked closer at the feature sugars per 100g and energy per 100g. Note that a maximum of 100 in the boxplot comes from higher
                 values that were sampled down to 100.
@@ -460,16 +454,13 @@
                 both France and USA is 100. The most interesting part is not the outliers, which are the dots outside the boxes, but rather the values within the box.
                 USA has in general higher sugar per 100g than France does, but the difference is minimal.
             </p>
-            <h3>Salty snacks</h3>
-            <div class="distribution-div">            
-                <figure class="distribution-fig">
+            <h3>Salty snacks</h3>           
+                <figure class="ddistributionFigure">
                     <embed type="image/svg+xml" src="img/salty_snacks_distribution.svg" />
                 </figure>
-                <p class="distribution-description">
+                <p>
                     The distribution of the subcategories in Salty snacks is shown in the graph. Compared to Sugary snacks, we only defined two subcategories. USA
                     has more Salty snacks than France in general. Chips is the largest category for both countries.
-                </p>
-                <p class="distribution-description">
                     Hover over the bars to see the exact percentage of each category for the different countries.
                 </p>
             </div>
