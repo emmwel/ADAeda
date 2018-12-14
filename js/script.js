@@ -15,12 +15,55 @@ $(document).ready(function (){
     let menu = document.getElementById("menu");
     let sticky = menu.offsetTop;
 
+    const round1Offset = document.getElementById("round2").offsetTop;
+    const round2Offset = document.getElementById("round3").offsetTop;
+    const round3Offset = document.getElementById("round4").offsetTop;
+    const round4Offset = document.getElementById("round5").offsetTop;
+    const round5Offset = document.getElementById("goal").offsetTop;
+    
+
     function scrollFunction() {
+        
+
         if (window.pageYOffset > sticky) {
             menu.classList.add("sticky");
         } else {
             menu.classList.remove("sticky");
         }
+
+        let franceScore = document.getElementById("franceScore");
+        let usScore = document.getElementById("usScore");
+        
+        if(window.pageYOffset < round1Offset )
+        {
+            franceScore.innerHTML = "FRA 0 - ";
+            usScore.innerHTML = "0 USA";
+        }
+        else if(window.pageYOffset > round1Offset &&  window.pageYOffset < round2Offset)
+        {
+            franceScore.innerHTML = "FRA 1 - "
+            usScore.innerHTML = "0 USA"
+        }
+        else if(window.pageYOffset > round2Offset &&  window.pageYOffset < round3Offset)
+        {
+            franceScore.innerHTML = "FRA 2 - "
+            usScore.innerHTML = "0 USA"
+        }
+        else if(window.pageYOffset > round3Offset &&  window.pageYOffset < round4Offset)
+        {
+            franceScore.innerHTML = "FRA 2 - "
+            usScore.innerHTML = "1 USA"
+        }
+        else if(window.pageYOffset > round4Offset &&  window.pageYOffset < round5Offset)
+        {
+            franceScore.innerHTML = "FRA 3 - "
+            usScore.innerHTML = "1 USA"
+        }
+        else{
+            franceScore.innerHTML = "FRA 3 - "
+            usScore.innerHTML = "2 USA"
+        }
+      
     }
 
     function nutriFunc() {
