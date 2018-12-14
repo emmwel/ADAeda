@@ -313,17 +313,29 @@
                     Nutriments
                 </button>
                 <div class="dropdown-content-nutri">
-                    <a onclick="showPlot('snacks_sugars','snacksPlots')">Sugars</a>
-                    <a onclick="showPlot('snacks_sugary_energy','snacksPlots')">Energy</a>
+                    <a onclick="showPlot('snacks_sugary_sugars','snacksPlots')">Sugars</a>
+                    <a onclick="showPlot('snacks_sugary_carbohydrates','snacksPlots')">Carbohydrates</a>
+                    <a onclick="showPlot('snacks_sugary_servings','snacksPlots')">Serving quantity</a>
+                    <a onclick="showPlot('snacks_sugary_energy_france','snacksPlots')">Energy France</a>
+                    <a onclick="showPlot('snacks_sugary_energy_usa','snacksPlots')">Energy USA</a>
                 </div>
             </div>
 
             <div class="plot-container">
-                <figure class="plots snacksPlots"   id="snacks_sugars">
+                <figure class="plots snacksPlots"   id="snacks_sugary_sugars">
                         <embed type="image/svg+xml" src="img/snacks_sugars.svg" />
                 </figure>
-                <figure class ="plots snacksPlots" id="snacks_sugary_energy">
+                <figure class="plots snacksPlots"   id="snacks_sugary_carbohydrates">
+                        <embed type="image/svg+xml" src="img/snacks_sugary_carbohydrates.svg" />
+                </figure>
+                <figure class="plots snacksPlots"   id="snacks_sugary_servings">
+                        <embed type="image/svg+xml" src="img/snacks_sugary_servings.svg" />
+                </figure>
+                <figure class ="plots snacksPlots" id="snacks_sugary_energy_france">
                     <embed type="image/svg+xml" src="img/energy_sugary_snacks_france_hist.svg" />
+                </figure>
+                <figure class ="plots snacksPlots" id="snacks_sugary_energy_usa">
+                    <embed type="image/svg+xml" src="img/energy_sugary_snacks_usa_hist.svg" />
                 </figure>
              </div>
 
@@ -345,6 +357,45 @@
                 <p class="distribution-description">
                     Hover over the bars to see the exact percentage of each category for the different countries.
                 </p>
+            </div>
+            <p>Different nutriments wooo</p>
+            <div class="nutri-dropdown">
+                <button onclick="nutriFunc" class="dropbtn" >
+                    Nutriments
+                </button>
+                <div class="dropdown-content-nutri">
+                    <a onclick="showPlot('snacks_salty_sodium','snacks_saltyPlots')">Sodium</a>
+                    <a onclick="showPlot('snacks_salty_fats','snacks_saltyPlots')">Fats</a>
+                    <a onclick="showPlot('snacks_salty_saturated_fats','snacks_saltyPlots')">Saturated fats</a>
+                    <a onclick="showPlot('snacks_salty_carbohydrates','snacks_saltyPlots')">Carbohydrates</a>
+                    <a onclick="showPlot('snacks_salty_servings','snacks_saltyPlots')">Serving quantity</a>
+                    <a onclick="showPlot('snacks_salty_energy_france','snacks_saltyPlots')">Energy France</a>
+                    <a onclick="showPlot('snacks_salty_energy_usa','snacks_saltyPlots')">Energy USA</a>
+                </div>
+            </div>
+
+            <div class="plot-container">
+                <figure class="plots snacks_saltyPlots"   id="snacks_salty_sodium">
+                        <embed type="image/svg+xml" src="img/snacks_salty_sodium.svg" />
+                </figure>
+                <figure class="plots snacks_saltyPlots"   id="snacks_salty_fats">
+                        <embed type="image/svg+xml" src="img/snacks_salty_fats.svg" />
+                </figure>
+                <figure class="plots snacks_saltyPlots"   id="snacks_salty_saturated_fats">
+                        <embed type="image/svg+xml" src="img/snacks_salty_saturated_fats.svg" />
+                </figure>
+                <figure class="plots snacks_saltyPlots"   id="snacks_salty_carbohydrates">
+                        <embed type="image/svg+xml" src="img/snacks_salty_carbohydrates.svg" />
+                </figure>
+                <figure class="plots snacks_saltyPlots"   id="snacks_salty_servings">
+                        <embed type="image/svg+xml" src="img/snacks_salty_servings.svg" />
+                </figure>
+                <figure class="plots snacks_saltyPlots"   id="snacks_salty_energy_france">
+                        <embed type="image/svg+xml" src="img/energy_salty_snacks_france_hist.svg" />
+                </figure>
+                <figure class="plots snacks_saltyPlots"   id="snacks_salty_energy_usa">
+                        <embed type="image/svg+xml" src="img/energy_salty_snacks_usa_hist.svg" />
+                </figure>
             </div>
 
         </div>

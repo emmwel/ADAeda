@@ -31,7 +31,8 @@ $(document).ready(function (){
 
 // Intialize plots
 showPlot('fats_saturated-fat','fatsPlots');
-showPlot('snacks_sugars','snacksPlots');
+showPlot('snacks_sugary_sugars','snacksPlots');
+showPlot('snacks_salty_sodium','snacks_saltyPlots');
 
 
 function showPlot(imgId,plotClass){
