@@ -176,11 +176,24 @@
     <div class="content">  
         <div id="fats">
             <h2>Fats</h2>
-            <p>Short info about the catogory </p>
+            <p>
+                This category contains any food items that can be considered as pure fats, the type of fat that you could use for for example greasing a
+                frying pan. This includes peanut butter as it is a kind of butter, which is a fat. We start by dividing the whole fat category into subcategories and mapping 
+                items into 5 different item types: butter, cooking spray, margarin, oil and peanut butter. The distribution for these subcategories can be seen in the following plot. 
+            </p>
             <figure class ="distributionFigure">
                 <embed type="image/svg+xml" src="img/fats_distribution.svg" />
             </figure>
-            <p>What kind of fats? </p>
+            <p>
+                In the distribution plot we see that France has more different oils and butter while the US has a considerably higher percentage of peanut butters. As a side-note 
+                we can also see that over half of the oils in France are olive oil, while olive oil only corresponds to less than a fourth of the oils in the US.
+            </p>
+            <p>
+                We want to investigate the different types of fat that are prevalent in the fat items, as this is has a large health impact. In general it is better to eat 
+                more unsaturated fats as this reduces the blood cholesterol levels. Saturated fats on the other hand can actually increase then blood cholesterol levels. Having
+                a low blood cholesterol level decreases the change of heart disease. We therefore compare the amounts of saturated, monounsaturated and polyunsaturated fats
+                for the fat items between the countries:
+            </p>
             <div class="nutri-dropdown">
                 <button class="dropbtn">
                     Different fats
@@ -191,20 +204,30 @@
                     <a onclick="showPlot('fats_polyunsaturated-fat','fatsPlots')">Polyunsaturated fat</a>
                 </div>
             </div>
-
             <div class="plot-container">
-                <figure class ="plots fatsPlots" id="fats_saturated-fat">
-                    <embed type="image/svg+xml" src="img/fats_saturated-fat.svg" />
-                </figure>
-        
-                <figure class ="plots fatsPlots" id="fats_monounsaturated-fat">
-                    <embed type="image/svg+xml" src="img/fats_monounsaturated-fat.svg" />
-                </figure>
+                    <figure class ="plots fatsPlots" id="fats_saturated-fat">
+                        <embed type="image/svg+xml" src="img/fats_saturated-fat.svg" />
+                    </figure>
             
-                <figure class ="plots fatsPlots" id="fats_polyunsaturated-fat">
-                    <embed type="image/svg+xml" src="img/fats_polyunsaturated-fat.svg" />
-                </figure>
-             </div>
+                    <figure class ="plots fatsPlots" id="fats_monounsaturated-fat">
+                        <embed type="image/svg+xml" src="img/fats_monounsaturated-fat.svg" />
+                    </figure>
+                
+                    <figure class ="plots fatsPlots" id="fats_polyunsaturated-fat">
+                        <embed type="image/svg+xml" src="img/fats_polyunsaturated-fat.svg" />
+                    </figure>
+                 </div>
+            <p>
+                Here we see clearly that the US has France has a higher amount of saturated fat, while the US has a higher amount of both monounsaturated fat and polyunsaturated fat.
+                The reason for this might be that the US has such a large amount of peanut butter, which contains a large amount of unsatured fats (around 80% of the fat in peanut
+                butter are unsatured). On the other hand, olive oil, which we noted were very prevalent in France compared to the US, does also contain large amounts of 
+                unsaturated fats, which might weight up a bit against the peanut butter.
+            </p>
+            <p>
+                As the unsaturated fats are good and the saturated fat is bad, the US wins this round. 
+            </p>
+
+            
             
                    
 
@@ -291,8 +314,9 @@
         <div id="dairy">
             <h2>Dairy</h2>
             <p>
-                This category consists of food items that we consider dairy, for example yoghurt, milk or cheese. To get a feeling for the different kinds of subcategories 
-                there are in this category we map the dairy items to descriptive categories and plot their distributions, which can be seen below:
+                This category consists of food items that we consider dairy, for example yoghurt, milk or cheese. We are not including butter in this category as we have already
+                treated this in the fats category. To get a feeling for the different kinds of subcategories there are in this category we map the dairy items to descriptive 
+                categories and plot their distributions, which can be seen below:
             </p>
             <figure class ="distributionFigure">
                 <embed type="image/svg+xml" src="img/dairy_distribution.svg" />
