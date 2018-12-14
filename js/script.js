@@ -26,7 +26,7 @@ $(document).ready(function (){
 
 // Intialize plots
 showPlot('fats_saturated-fat','fatsPlots');
-showPlot('snacks_sugars','snacksPLots');
+showPlot('snacks_sugars','snacksPlots');
 
 
 function showPlot(imgId,plotClass){

@@ -48,7 +48,7 @@ body{
     width: 70%;
     margin: auto;
 }
-.fatsPlots{
+.plots{
     width: 70%;
     display: inline-block;
     margin: auto;  
@@ -58,7 +58,7 @@ body{
 .plot-container {
     position: relative;
     margin: auto;
-    height: 80vh;
+    height: 35vw;
 }
 
 
