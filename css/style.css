@@ -267,3 +267,36 @@ body{
     background-color: #f1f1f1;
     color: black;
   }
+
+  /*Parralax round image */
+  .parralax {
+    /* The image used */
+    background-image: url("../img/round.png");
+
+    /* Set a specific height */
+    min-height: 350px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ #round1{
+    background-image: url("../img/round1.png");
+  }
+  #round2{
+    background-image: url("../img/round2.png");
+  }
+  #round3{
+    background-image: url("../img/round3.png");
+  }
+  #round4{
+    background-image: url("../img/round4.png");
+  }
+  #round5{
+    background-image: url("../img/round5.png");
+  }
+
+
+
