@@ -49,16 +49,19 @@ body{
     width: 70%;
     margin: auto;
 }
-.fatsFig{
-    width: 30vw;
+.plots{
+    width: 70%;
     display: inline-block;
     margin: auto;  
 }
-.plotText{
-    width: 30vw;
-    display: inline-block;
+
+/* Slideshow container */
+.plot-container {
+    position: relative;
     margin: auto;
+    height: 35vw;
 }
+
 
 /* Dropdown Button */
 .dropdown .dropbtn {
@@ -68,6 +71,7 @@ body{
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    cursor: pointer;
 }
 
   
@@ -200,6 +204,7 @@ body{
     font-family: inherit;
     min-width: 150px;
     margin: 0;
+    cursor: pointer;
 }
   .nutri-dropdown {
     position: relative;
@@ -216,6 +221,7 @@ body{
     min-width: 150px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    cursor: pointer;
   }
 
   .dropdown-content-nutri a {
@@ -233,3 +239,31 @@ body{
   
     /* Show the dropdown menu on hover */
     .nutri-dropdown:hover .dropdown-content-nutri {display: block;}
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a grey background color */
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
