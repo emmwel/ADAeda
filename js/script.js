@@ -22,4 +22,9 @@ $(document).ready(function (){
             menu.classList.remove("sticky");
         }
     }
+
+    function nutriFunc() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+    
 });

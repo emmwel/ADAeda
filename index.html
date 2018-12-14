@@ -173,7 +173,7 @@
             <p style="color: red">Säga något mer??</p>
             <h3>Data</h3>
             <p>
-               The dataset used to get nutritional facts about packaged foods in this analysis is the Open Food Facts database. The database is non-profit open
+               The dataset used to get nutritional facts about packaged foods in this analysis is the Open Food Facts database. The database is a non-profit open
                database, which means anyone all over the world can use the data and contribute to the database. In the database, there exists 459371 products from 
                France and 175661 products from the USA, which we divided in to two datasets, one for each country. We also downsampled the France dataset as it is
                significantly larger than the USA dataset.
@@ -195,8 +195,7 @@
             </ul>
             <p>
                 The last point was important because no nutriment can be more than a 100% of a product. Since each nutriment is defined per 100g, we set that the
-                range should be between 0 and a 100. The only nutriment features we did not do this for was carbohydrates_100g and energy_100g, as they can be
-                more than a 100 for a 100g.
+                range should be between 0 and a 100. The only nutriment feature we did not do this for was energy_100g, as energy can be more than a 100 for a 100g.
             </p>
             <h3>Food categories</h3>
             <p>
@@ -275,7 +274,7 @@
             <h2>Snacks</h2>
             <p>
                 This category is divided in to two subcategories, Sugary snacks and Salty snacks. These also have smaller categories within themselves, such as
-                Chocolates in Sugary snacks. In this category we have focused on looking at the distribution of the nutriments sugars per 100g and energy per 100g. 
+                Chocolates in Sugary snacks.
             </p>
             <h3>Sugary snacks</h3>
             <div class="distribution-div">            
@@ -295,10 +294,11 @@
                 </p>
             </div>
             <p>
-                For sugary snacks, we looked closer at the feature sugars per 100g.
+                For sugary snacks, we looked closer at the feature sugars per 100g and energy per 100g. Note that a maximum of 100 in the boxplot comes from higher
+                values that were sampled down to 100.
             </p>
             <div class="nutri-dropdown">
-                <button class="dropbtn">
+                <button onclick="nutriFunc" class="dropbtn" >
                     Nutriments
                 </button>
                 <div class="dropdown-content-nutri">
@@ -311,10 +311,23 @@
                 <embed type="image/svg+xml" src="img/snacks_sugars.svg" />
             </figure>
             <p>
-                Hovering over the boxes in the boxplot will show facts about the nutriment. The max for both are 100, but this is most likely higher values that we
-                sampled down to 100. The most interesting part is not the outliers, but rather the values within the box. USA has in general higher sugar per 100g
-                than France does, but the difference is minimal.
+                Hovering over the boxes in the boxplot will show facts about the nutriment. If we choose sugars per 100g, we will see that the maximum amount for
+                both France and USA is 100. The most interesting part is not the outliers, which are the dots outside the boxes, but rather the values within the box.
+                USA has in general higher sugar per 100g than France does, but the difference is minimal.
             </p>
+            <h3>Salty snacks</h3>
+            <div class="distribution-div">            
+                <figure class="distribution-fig">
+                    <embed type="image/svg+xml" src="img/salty_snacks_distribution.svg" />
+                </figure>
+                <p class="distribution-description">
+                    The distribution of the subcategories in Salty snacks is shown in the graph. Compared to Sugary snacks, we only defined two subcategories. USA
+                    has more Salty snacks than France in general. Chips is the largest category for both countries.
+                </p>
+                <p class="distribution-description">
+                    Hover over the bars to see the exact percentage of each category for the different countries.
+                </p>
+            </div>
 
         </div>
         <hr>
