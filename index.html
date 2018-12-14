@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    
 </head>
 <body>
     <div id="header">
@@ -236,21 +236,31 @@
                 <embed type="image/svg+xml" src="img/fats_distribution.svg" />
             </figure>
             <p>What kind of fats? </p>
-            
-            <figure class ="fatsFig">
-                <embed type="image/svg+xml" src="img/fats_saturated-fat.svg" />
-            </figure>
-            <div class="plotText">
-                hej jag heter anna och det här är min text som jag skriver
+            <div class="nutri-dropdown">
+                <button class="dropbtn">
+                    Different fats
+                </button>
+                <div class="dropdown-content-nutri">
+                    <a onclick="showPlot('fats_saturated-fat','fatsPlots')">Saturated fat</a>
+                    <a onclick="showPlot('fats_monounsaturated-fat','fatsPlots')">Monusaturated fat</a>
+                    <a onclick="showPlot('fats_polyunsaturated-fat','fatsPlots')">Polyunsaturated fat</a>
+                </div>
             </div>
-    
-            <figure class ="fatsFig">
-                <embed type="image/svg+xml" src="img/fats_monounsaturated-fat.svg" />
-            </figure>
+
+            <div class="plot-container">
+                <figure class ="fatsPlots" id="fats_saturated-fat">
+                    <embed type="image/svg+xml" src="img/fats_saturated-fat.svg" />
+                </figure>
         
-            <figure class ="fatsFig">
-                <embed type="image/svg+xml" src="img/fats_polyunsaturated-fat.svg" />
-            </figure>
+                <figure class ="fatsPlots" id="fats_monounsaturated-fat">
+                    <embed type="image/svg+xml" src="img/fats_monounsaturated-fat.svg" />
+                </figure>
+            
+                <figure class ="fatsPlots" id="fats_polyunsaturated-fat">
+                    <embed type="image/svg+xml" src="img/fats_polyunsaturated-fat.svg" />
+                </figure>
+             </div>
+            
                    
 
         </div>
@@ -297,19 +307,34 @@
             <p>
                 For sugary snacks, we looked closer at the feature sugars per 100g.
             </p>
+
             <div class="nutri-dropdown">
                 <button class="dropbtn">
                     Nutriments
                 </button>
                 <div class="dropdown-content-nutri">
-                    <a href="#fats">Sugars per 100g</a>
-                    <a href="#meat">Energy per 100g</a>
+                    <a onclick="showPlot('snacks_sugars','snacksPLots')">Sugars</a>
+                    <a onclick="showPlot('snacks_sugary_energy','snacksPlots')">Energy</a>
                 </div>
             </div>
 
-            <figure class="snacks-nutri-fig">
-                <embed type="image/svg+xml" src="img/snacks_sugars.svg" />
-            </figure>
+            <div class="plot-container">
+                <figure class="snacksPlots" id="snacks_sugars">
+                        <embed type="image/svg+xml" src="img/snacks_sugars.svg" />
+                </figure>
+                <figure class ="snacksPlots" id="snacks_sugary_energy">
+                    <embed type="image/svg+xml" src="img/snacks_sugary_energy.svg" />
+                </figure>
+             </div>
+
+
+
+
+
+
+
+
+
             <p>
                 Hovering over the boxes in the boxplot will show facts about the nutriment. The max for both are 100, but this is most likely higher values that we
                 sampled down to 100. The most interesting part is not the outliers, but rather the values within the box. USA has in general higher sugar per 100g
@@ -324,3 +349,4 @@
 
     </div>
 </body>
+<script src="js/script.js"></script>
