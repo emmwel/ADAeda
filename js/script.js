@@ -75,6 +75,8 @@ $(document).ready(function (){
 // Intialize plots
 showPlot('fats_saturated-fat','fatsPlots');
 showPlot('snacks_sugars','snacksPlots');
+showPlot('meats_energy','meatsPlots')
+showPlot('breads_energy','breadsPlots')
 
 
 function showPlot(imgId,plotClass){

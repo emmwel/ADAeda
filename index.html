@@ -214,8 +214,76 @@
     <div class="content">
         <div id="meat">
             <h2>Meat Poultry Fish</h2>
-            sdklf sdklfdsklsdklsd dskflsdfkld fsdlds nd sdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds ndsdklf sdklfdsklsdklsd dskflsdfkld fsdlds nd
+            <p>
+                In this category we have chosen to look at different kinds of meats items, namely meat, poultry and fish products. While the raw meats 
+                will probably not differ that much in nutriments, the reasoning behind the category is that the countries might have products with meats
+                in them which also contain additional ingredients, for example a meat dish that is deep fried, or a meat item marinated in some kind of sauce.
+                This information will be reflected on the food item's nutritional data and this is what will be compared between the two countries.
+            </p>
+            <p>
+                We take a look at the differences for different nutriments for the two countries.
+            </p>
+            <div class="nutri-dropdown">
+                    <button class="dropbtn">
+                        Nutriments
+                    </button>
+                    <div class="dropdown-content-nutri">
+                        <a onclick="showPlot('meats_energy','meatsPlots')">Energy per 100g</a>
+                        <a onclick="showPlot('meats_carbs','meatsPlots')">Carbohydrates per 100g</a>
+                        <a onclick="showPlot('meats_fats','meatsPlots')">Fat per 100g</a>
+                        <a onclick="showPlot('meats_proteins','meatsPlots')">Protein per 100g</a>
+                        <a onclick="showPlot('meats_sugars','meatsPlots')">Sugar per 100g</a>
+                    </div>
+                </div>
+    
+                <div class="plot-container">
+                    <figure class ="plots meatsPlots" id="meats_energy">
+                        <embed type="image/svg+xml" src="img/meats_energy.svg" />
+                    </figure>
+            
+                    <figure class ="plots meatsPlots" id="meats_carbs">
+                        <embed type="image/svg+xml" src="img/meats_carbs.svg" />
+                    </figure>
+                
+                    <figure class ="plots meatsPlots" id="meats_fats">
+                        <embed type="image/svg+xml" src="img/meats_fats.svg" />
+                    </figure>
 
+                    <figure class ="plots meatsPlots" id="meats_proteins">
+                        <embed type="image/svg+xml" src="img/meats_proteins.svg" />
+                    </figure>
+
+                    <figure class ="plots meatsPlots" id="meats_sugars">
+                        <embed type="image/svg+xml" src="img/meats_sugars.svg" />
+                    </figure>
+                 </div>
+            <p>
+                We immediately observe that the amount of energy per 100g seems to be very similar for meat items from the two countries.
+                We also protein levels for the two different countries seems to be fairly equal.
+                However, as can be seen in the box plot for carbohydrates per 100g, food items from the US seems to contain much more of it per 100g 
+                than food items from France. This observation could, as mentioned in the introduction of this category, be 
+                explained by that the different countries prepare the food items differently with different ingredients. Possible hypoteses could be that
+                the US have more things that are fried in oil, have a larger amount of sauces, have more marinated items or more items that comes wrapped in bread.
+            </p>
+            <p>
+                To further investigate, we look at the amount of fat per 100g. Here we can see that the values for the US are actually lower, 
+                which would suggest that the hypothesis of that more things are fried in oil in the US is wrong. So where does the big difference in fat come from?
+                In our data analysis we took a closer look at the France data, 
+                and found out that 76.84% of the meat items from France that have between 50g and 80g of fat per 100g are foie gras. This is something that 
+                might explain the possibly surprising difference in amount of fats between the two countries, as foie gras is a typical French dish which is not really
+                that common in the US.
+            </p>
+            <p>
+                The amount of sugar is also considerably higher in the US than in France. This is no surprise given the results of the carbohydrates, the two
+                are often correlated. 
+            </p>
+            <p>
+                So to conclude this category, we have seen that in general, while the amount of energy per 100g of meat items is about the same for the both countries, 
+                there is a rather clear difference in where the energy is stored. For meat items from the US: in carbohydrates and mainly sugar, for meat items from France:
+                in fat. To decide which one is the most healthy here is a bit controversial, as the healthiness of fat is not well defined. In general though, eating 
+                large amounts of sugar is not very good since it contains a lot of energy and is not very filling, resulting in that you can eat more. For this reason,
+                this round goes to France.
+            </p>
         </div>
     </div>
     <div class="parralax" id="round3"></div>
@@ -239,7 +307,59 @@
     <div class="content">
         <div id="bread">
             <h2>Bread</h2>
+            In this category we compare bread between the two countries. This does not include cookies, biscuits and sugary snacks made of grains.
+            In our comparison we started by observing that there is a higher amount of bread-related items in the US compared to in France, 5404 compared to 3107. 
+            The reason for this could be that buying bread at a bakery is much more common in France compared to in the US, resulting in that the demand for bread 
+            as a product in stores is not as high.
         </div>
+        <div class="nutri-dropdown">
+                <button class="dropbtn">
+                    Nutriments
+                </button>
+                <div class="dropdown-content-nutri">
+                    <a onclick="showPlot('breads_energy','breadsPlots')">Energy per 100g</a>
+                    <a onclick="showPlot('breads_carbs','breadsPlots')">Carbohydrates per 100g</a>
+                    <a onclick="showPlot('breads_fats','breadsPlots')">Fat per 100g</a>
+                    <a onclick="showPlot('breads_fiber','breadsPlots')">Fiber per 100g</a>
+                    <a onclick="showPlot('breads_sugars','breadsPlots')">Sugar per 100g</a>
+                </div>
+            </div>
+
+            <div class="plot-container">
+                <figure class ="plots breadsPlots" id="breads_energy">
+                    <embed type="image/svg+xml" src="img/breads_energy.svg" />
+                </figure>
+        
+                <figure class ="plots breadsPlots" id="breads_carbs">
+                    <embed type="image/svg+xml" src="img/breads_carbs.svg" />
+                </figure>
+            
+                <figure class ="plots breadsPlots" id="breads_fats">
+                    <embed type="image/svg+xml" src="img/breads_fats.svg" />
+                </figure>
+
+                <figure class ="plots breadsPlots" id="breads_fiber">
+                    <embed type="image/svg+xml" src="img/breads_fiber.svg" />
+                </figure>
+
+                <figure class ="plots breadsPlots" id="breads_sugars">
+                    <embed type="image/svg+xml" src="img/breads_sugars.svg" />
+                </figure>
+             </div>
+        <p>
+            Comparing bread items between the two countries we see that the energy values per 100g are very similar. However when it comes to carbohydrates, the US definitely has more.
+            An interesting thing is that the bread items from the US have less sugar per 100g than bread items from France. This is unexpected, since carbohydrates and sugars often
+            correlate. An explanation could be that France has more light bread with more sugar than the US, so that the carbohydrates in the US bread comes from the grains rather 
+            than the sugar. This hypothesis is strenghtened when looking at the fiber per 100g, where the US has more (note that this plot is logaritmic).
+        </p>
+        <p>
+            The difference in the amount of fat between the two countries are not very big, with france having just a little bit more in general. A guess of what could be causing
+            this is that the bread in France in general have more butter and oil on it.
+        </p>
+        <p>
+            Based on the stated observations, we conclude that the US has darker bread with less butter and oil on it compared to the bread from France. Both more darkness as well 
+            as less butter/oil are things that we consider as good things, which is the reason the US wins this round.
+        </p>
     </div>
     <div class="parralax" id="round5"></div>
     <div class="content">
