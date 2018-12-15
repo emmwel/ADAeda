@@ -64,15 +64,14 @@ body{
 }
 .plots{
     width: 70%;
-    display: inline-block;
     margin: auto;  
+    height: 35vw;
 }
 
 /* Slideshow container */
 .plot-container {
     position: relative;
     margin: auto;
-    height: 35vw;
 }
 
 
@@ -195,6 +194,7 @@ body{
       float: left;
       margin: auto;
       width: 45vw;
+      padding-right: 10px;
   }
 
   .distribution-description {
@@ -309,6 +309,9 @@ body{
   }
   #round5{
     background-image: url("../img/round5.png");
+  }
+  #roundGoal{
+    background-image: url("../img/roundGoal.png");
   }
 
 

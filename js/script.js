@@ -19,7 +19,7 @@ $(document).ready(function (){
     const round2Offset = document.getElementById("round3").offsetTop;
     const round3Offset = document.getElementById("round4").offsetTop;
     const round4Offset = document.getElementById("round5").offsetTop;
-    const round5Offset = document.getElementById("goal").offsetTop;
+    const round5Offset = document.getElementById("roundGoal").offsetTop;
     
 
     function scrollFunction() {
@@ -36,32 +36,32 @@ $(document).ready(function (){
         
         if(window.pageYOffset < round1Offset )
         {
-            franceScore.innerHTML = "FRA 0 - ";
-            usScore.innerHTML = "0 USA";
+            franceScore.innerHTML = "0";
+            usScore.innerHTML = "0";
         }
         else if(window.pageYOffset > round1Offset &&  window.pageYOffset < round2Offset)
         {
-            franceScore.innerHTML = "FRA 1 - "
-            usScore.innerHTML = "0 USA"
+            franceScore.innerHTML = "0"
+            usScore.innerHTML = "1"
         }
         else if(window.pageYOffset > round2Offset &&  window.pageYOffset < round3Offset)
         {
-            franceScore.innerHTML = "FRA 2 - "
-            usScore.innerHTML = "0 USA"
+            franceScore.innerHTML = "1"
+            usScore.innerHTML = "1"
         }
         else if(window.pageYOffset > round3Offset &&  window.pageYOffset < round4Offset)
         {
-            franceScore.innerHTML = "FRA 2 - "
-            usScore.innerHTML = "1 USA"
+            franceScore.innerHTML = "2"
+            usScore.innerHTML = "1"
         }
         else if(window.pageYOffset > round4Offset &&  window.pageYOffset < round5Offset)
         {
-            franceScore.innerHTML = "FRA 3 - "
-            usScore.innerHTML = "1 USA"
+            franceScore.innerHTML = "2"
+            usScore.innerHTML = "2"
         }
         else{
-            franceScore.innerHTML = "FRA 3 - "
-            usScore.innerHTML = "2 USA"
+            franceScore.innerHTML = "?"
+            usScore.innerHTML = "?"
         }
       
     }
