@@ -1,6 +1,7 @@
 body{
-    width: 99%;
+    padding: 0;
     height: 100%;
+    width: 99%;
     font-family: 'Abel', sans-serif;
 }
 
@@ -315,6 +316,13 @@ body{
   }
   #roundGoal{
     background-image: url("../img/roundGoal.png");
+  }
+  #footer{
+    background-color: #f1f1f1;
+    height: 60px;
+  }
+  #authors{
+      padding: 20px 0 0 20px;
   }
 
 
