@@ -180,7 +180,7 @@
                 This category contains any food items that can be considered as pure fats, the type of fat that you could use for for example greasing a
                 frying pan. This includes peanut butter as it is a kind of butter, which is a fat. We start by dividing the whole fat category into subcategories and mapping 
                 items into 5 different item types: butter, cooking spray, margarin, oil and peanut butter. The distribution for these subcategories can be seen in the following plot. 
-            </p>
+             </p>
             <figure class ="distributionFigure">
                 <embed type="image/svg+xml" src="img/fats_distribution.svg" />
             </figure>
@@ -204,20 +204,21 @@
                     <a onclick="showPlot('fats_polyunsaturated-fat','fatsPlots')">Polyunsaturated fat</a>
                 </div>
             </div>
+
             <div class="plot-container">
-                    <figure class ="plots fatsPlots" id="fats_saturated-fat">
-                        <embed type="image/svg+xml" src="img/fats_saturated-fat.svg" />
-                    </figure>
+                <figure class ="plots fatsPlots" id="fats_saturated-fat">
+                    <embed type="image/svg+xml" src="img/fats_saturated-fat.svg" />
+                </figure>
+        
+                <figure class ="plots fatsPlots" id="fats_monounsaturated-fat">
+                    <embed type="image/svg+xml" src="img/fats_monounsaturated-fat.svg" />
+                </figure>
             
-                    <figure class ="plots fatsPlots" id="fats_monounsaturated-fat">
-                        <embed type="image/svg+xml" src="img/fats_monounsaturated-fat.svg" />
-                    </figure>
-                
-                    <figure class ="plots fatsPlots" id="fats_polyunsaturated-fat">
-                        <embed type="image/svg+xml" src="img/fats_polyunsaturated-fat.svg" />
-                    </figure>
-                 </div>
-            <p>
+                <figure class ="plots fatsPlots" id="fats_polyunsaturated-fat">
+                    <embed type="image/svg+xml" src="img/fats_polyunsaturated-fat.svg" />
+                </figure>
+             </div>
+             <p>
                 Here we see clearly that the US has France has a higher amount of saturated fat, while the US has a higher amount of both monounsaturated fat and polyunsaturated fat.
                 The reason for this might be that the US has such a large amount of peanut butter, which contains a large amount of unsatured fats (around 80% of the fat in peanut
                 butter are unsatured). On the other hand, olive oil, which we noted were very prevalent in France compared to the US, does also contain large amounts of 
@@ -227,7 +228,6 @@
                 As the unsaturated fats are good and the saturated fat is bad, the US wins this round. 
             </p>
 
-            
             
                    
 
@@ -314,9 +314,8 @@
         <div id="dairy">
             <h2>Dairy</h2>
             <p>
-                This category consists of food items that we consider dairy, for example yoghurt, milk or cheese. We are not including butter in this category as we have already
-                treated this in the fats category. To get a feeling for the different kinds of subcategories there are in this category we map the dairy items to descriptive 
-                categories and plot their distributions, which can be seen below:
+                This category consists of food items that we consider dairy, for example yoghurt, milk or cheese. To get a feeling for the different kinds of subcategories 
+                there are in this category we map the dairy items to descriptive categories and plot their distributions, which can be seen below:
             </p>
             <figure class ="distributionFigure">
                 <embed type="image/svg+xml" src="img/dairy_distribution.svg" />
@@ -422,23 +421,26 @@
         <div id="snacks">
             <h2>Snacks</h2>
             <p>
-                
                 This category is divided in to two subcategories, Sugary snacks and Salty snacks. These also have smaller categories within themselves, such as
                 Chocolates in Sugary snacks. The total amount of snacks in the France dataset was 22 364 while the USA had 31 544 entries. At the moment it is hard
                 to know if this depends on the products added to the database or if the USA genuinely has more snacks than France does.
             </p>
             <h3>Sugary snacks</h3>
             <p>
-                In the graph the distribution of the subcategories in Sugary snacks is shown. France had a total of 18 164 sugary snacks and the USA has 11 177.
-                As we can see, Chocolates are in the majority for both countries. However France still has a higher percentage of Chocolates than the USA does.
-                Candy is the smallest category for both countries.
+                In the graph the distribution of the subcategories in Sugary snacks is shown. The four subcategories are: chocolates, bars, candy and cookies.
+                France has a total of 18 164 sugary snacks and the USA has 11 177.
             </p>        
             <figure class="distributionFigure">
                 <embed type="image/svg+xml" src="img/sugary_snacks_distribution.svg" />
             </figure>
             <p>
-                For sugary snacks, we looked closer at the feature sugars per 100g and energy per 100g. Note that a maximum of 100 in the boxplot comes from higher
-                values that were sampled down to 100.
+                The biggest category for both countries is Chocolates. However, USA still has a higher percentage of Chocolates than France does.
+                Candy is the smallest category for both countries as well, but France still has more candy than the USA does.
+            </p>
+            <p>
+                To determine which country has the healthiest products, we look at different nutriments. In general, lower sugar content is good as well as lower
+                energy, which is measured in kJ, and carbohydrates for snacks that are sugary, to make them less unhealthy. Another interesting feature is serving
+                quantity, even though it is not a nutriment, so we can see if one of the countries recommend a larger serving quantity than the other.
             </p>
 
             <div class="nutri-dropdown">
@@ -471,24 +473,30 @@
                     <embed type="image/svg+xml" src="img/energy_sugary_snacks_usa_hist.svg" />
                 </figure>
              </div>
-
-
             <p>
-                Hovering over the boxes in the boxplot will show facts about the nutriment. If we choose sugars per 100g, we will see that the maximum amount for
-                both France and USA is 100. The most interesting part is not the outliers, which are the dots outside the boxes, but rather the values within the box.
-                USA has in general higher sugar per 100g than France does, but the difference is minimal.
+                An initial observation is that neither sugar nor carbohydrates differ a lot between the countries, even though the US skews a little bit higher.
+                The USA does however have a larger serving quantity than France does, but France has more items with higher energy values as can be seen by comparing
+                the two histograms for energy. It's hard to determine between the two what is worse for health. A larger serving quantity indicates that people eat more,
+                but higher energy values can also make someone unaware of the amount of calories consumed.
             </p>
-            <h3>Salty snacks</h3>           
-                <figure class="ddistributionFigure">
+            <h3>Salty snacks</h3>
+                <p>
+                    The distribution of the subcategories in Salty snacks is shown in the graph. Four subcategories were defined: chips, popcorn, biscuits and nuts and
+                    seeds. France had 2 682 products classified as salty snacks, while the USA had 5692.
+                </p>           
+                <figure class="distributionFigure">
                     <embed type="image/svg+xml" src="img/salty_snacks_distribution.svg" />
                 </figure>
                 <p>
-                    The distribution of the subcategories in Salty snacks is shown in the graph. Compared to Sugary snacks, we only defined two subcategories. USA
-                    has more Salty snacks than France in general. Chips is the largest category for both countries.
-                    Hover over the bars to see the exact percentage of each category for the different countries.
+                    Chips is the biggest category for both countries, but the USA seems to have more chips than France does. The smallest category for France is popcorn
+                    and for the USA, it's biscuits.
+                </p>
+                <p>
+                    The nutriments used to compare the countries will be sodium, fats, saturated fat, carbohydrates and energy. Sodium can be dangerous in large doses,
+                    and saturated fat is, as earlier mentioned, bad for you. As with sugary snacks, larger values of carbohydrates and energy is considered less healthy
+                    than smaller ones.
                 </p>
             </div>
-            <p>Different nutriments wooo</p>
             <div class="nutri-dropdown">
                 <button onclick="nutriFunc" class="dropbtn" >
                     Nutriments
@@ -512,7 +520,7 @@
                         <embed type="image/svg+xml" src="img/snacks_salty_fats.svg" />
                 </figure>
                 <figure class="plots snacks_saltyPlots"   id="snacks_salty_saturated_fats">
-                        <embed type="image/svg+xml" src="img/snacks_salty_saturated_fats.svg" />
+                        <embed type="image/svg+xml" src="img/snacks_salty_saturated_fat.svg" />
                 </figure>
                 <figure class="plots snacks_saltyPlots"   id="snacks_salty_carbohydrates">
                         <embed type="image/svg+xml" src="img/snacks_salty_carbohydrates.svg" />
@@ -527,6 +535,17 @@
                         <embed type="image/svg+xml" src="img/energy_salty_snacks_usa_hist.svg" />
                 </figure>
             </div>
+            <p>
+                Sodium seems to be the same amount in products from both countries. In France, the level of fats differ more than in the USA but the higher quantile
+                is close to the same level as well. The USA has higher levels of saturated fats than France does, which are considered the bad fats. Carbohydrates per
+                100g also have higher values in the USA products than in the ones from France. The serving quantity plot only shows that the data has a lot of outliers,
+                and cannot be considered to show any significant differences between the countries. France has, once again, higher energy levels than the USA does.
+            </p>
+            <p>
+                From the data, we conclude that France has healthier nutriments than the USA does. Even though they were alike in a lot of subcategories, 
+                there were still some notable differences. The serving quantity is smaller for sugary snacks in France as well as the fact that the salty
+                snacks from the USA have more saturated fats and carbohydrates. This round goes to France!
+            </p>
 
         </div>
         <hr>
