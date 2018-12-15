@@ -45,6 +45,7 @@ body{
     font-size: 20px;
     display:inline-block;
 }
+
 #scoreBoard{
     text-decoration: none;
     color: black;
@@ -218,6 +219,7 @@ body{
     min-width: 150px;
     margin: 0;
     cursor: pointer;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2), 0 3px 12px 0 rgba(0,0,0,0.19);
 }
   .nutri-dropdown {
     position: relative;
@@ -235,6 +237,7 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     cursor: pointer;
+    margin-top: 3px;
   }
 
   .dropdown-content-nutri a {

@@ -60,8 +60,8 @@ $(document).ready(function (){
             usScore.innerHTML = "2"
         }
         else{
-            franceScore.innerHTML = "?"
-            usScore.innerHTML = "?"
+            franceScore.innerHTML = "3"
+            usScore.innerHTML = "2"
         }
       
     }
