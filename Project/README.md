@@ -61,8 +61,8 @@ Done!
 
 # Statement of contribution
 
-*Anna Häägg* - Did the categorization of the `dairy` and the `fats` categories. Built the data story web site. Made the main decisions regarding what features we were going to focus on. Constructed a large part of the plots.
+*Anna Häägg* - Did the categorization of the `dairy` and the `fats` categories. Built the data story web site. Made the main decisions regarding what features we were going to focus on. Constructed a large part of the plots. Will prepare the presentaion.
 
-*David Malmström* - Did the categorization of the `meats` and `breads` categories. Created functions for filtering the dataset to extract food items that relate to categories and exclude food items that should not be there. Wrote parts of the text on the final data story.
+*David Malmström* - Did the categorization of the `meats` and `breads` categories. Created functions for filtering the dataset to extract food items that relate to categories and exclude food items that should not be there. Wrote parts of the text on the final data story. Will prepare the presentation.
 
-*Emma Nilsson* - Did cleaning of the data. Did the categorization of the `snacks` category. Built the data story web site. Will construct the presentation poster. 
+*Emma Nilsson* - Did cleaning of the data. Did the categorization of the `snacks` category. Built the data story web site. Will construct the presentation poster.
