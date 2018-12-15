@@ -44,7 +44,7 @@
             <p> A Body Mass Index (BMI) over 25 is defined as overweight and a BMI over 30 is
                 defined as obese. In 2016, 39% of adults worldwide were overweight and 13% were obese. WHO considers obesity an epidemic and calculated in 2017 that
                 2.8 million people die every year due to being overweight or obese. Obesity is also considered an easily preventable epidemic by the WHO,
-                as it in most cases can be prevented by consuming a healthy diet and doing physical exercise.
+                as it in most cases can be prevented by having a healthy diet and doing physical exercise.
             </p>
             <p>
                 In this analysis, packaged food products from two countries will by analysed by investigating 
@@ -53,13 +53,12 @@
                 we’re going to see today. 
             </p>
             <h3>Our Contestants</h3>
-            <p>With noted overweight among 67,9% of the population and an average BMI of 29,1 our first contestant 
-                is the big burger loving country on the other side of the Atlantic Ocean, <b>United States of America</b>.
-            </p>
             <p>
-                    Our other contestant brought us the Eiffel Tower and the riviera. <b>France</b> 
-                    with one of the best average BMI in Europe, 25,6, 
-                    this competitions favourite, but can they stand the pressure?
+                Our first contestant brought us the Eiffel Tower and the riviera. With an average BMI of 25.6, one of the best in Europe, <b>France</b> 
+                can be considered the favourite of this competition, but can it stand the pressure?
+            </p>
+            <p>With noted overweight among 67,9% of the population and an average BMI of 29,1 our second contestant 
+                is the big burger-loving country on the other side of the Atlantic Ocean, <b>United States of America</b>.
             </p>
             <div class="parent-table-container">
                 <div class="table-container">
@@ -115,12 +114,12 @@
             <h3>Data</h3>
             <p>
                 The dataset used to investigate the nutritional ingredients in the products was the <i>Open Food Facts Database.</i> The database is a non-profit open
-                database, which means anyone all over the world can use the data and contribute to the database. Within the database, <i>459371</i> products were labelled with
-                France and <i>175661</i> products labelled with US. The data was extracted with the respect to the labels into two subsets. Since the French data set was significantly larger, 
-                it was randomly down sampled to consist of the same amount of entries as the US dataset.
+                database, which means that anyone all over the world can use the data and contribute to the database. Within the database, <i>459 371</i> products were labelled with
+                France and <i>175 661</i> products labelled with the US. The data was extracted with respect to the labels into two subsets. Since the French data set was significantly larger, 
+                it was randomly downsampled to consist of the same amount of entries as the US dataset.
             </p>
             <p>
-                During the analysis features regarding nutriments, such as energy per a 100g and sugars per a 100g, as well as product names and food categories were investigated. Names and
+                During the analysis, features regarding nutriments, such as energy per 100g and sugars per 100g, as well as product names and food categories were investigated. Names and
                 food categories were used to categorize the data to compare nutritional values between the two countries with products in the same category.
                 This was to make sure the comparisons would make sense: comparing the sugar content of a lollipop from the USA with the sugar content of a soup from
                 France would not give a true image of the data.
@@ -135,11 +134,11 @@
             </ul>
             <p>
                 The last point was important because no nutriment can be more than a 100% of a product. Since each nutriment is defined per 100g, we set that the
-                range should be between 0 and a 100. The only nutriment feature we did not do this for was energy_100g, as energy can be more than a 100 for a 100g.
+                range should be between 0 and a 100. The only nutriment feature we did not do this for was energy_100g, as energy when given in Kj can be more than 100 per 100g.
             </p>
             <h3>Food categories</h3>
             <p>
-                This competitions will consist of 5 rounds that each investigates one food category. 
+                This competition will consist of 5 rounds that each investigates one food category. 
                 The five categories are:          
             </p>
             <ul>
@@ -159,8 +158,8 @@
                 sure that as many matches as possible were found. Then, both datasets were queried to see the results of the filtering. 
                 If the results contained unwanted products, a list of words that were not part of the category was defined. 
                 This list was then used to filter away the wrongly classified data. As an example, “butter popcorn” was
-                initially sorted to the fats category since it contains the word “butter”. However, “butter popcorn” are not
-                a fat and should not be part of the fats-category. There for the word “popcorn” was added to the “not a fat word” list
+                initially sorted to the fats category since it contains the word “butter”. However, “butter popcorn” is not a type of
+                a fat and should not be part of the fats category. Therefore the word “popcorn” was added to the “not a fat word” list.
             </p>
             <p>
                 But enough with details, let’s start the competition. <b>May the best food country win!</b>
@@ -172,26 +171,26 @@
         <div id="fats">
             <h2>Fats</h2>
             <p>
-                We start of this competition by studying the countries’ fats. This category contains products that can be considered as pure fats. This includes oil, butter, nut butter and different kinds of margarines. 
+                We start off this competition by studying the countries’ fats. This category contains products that can be considered as pure fats. This includes oil, butter, nut butter and different kinds of margarines. 
                 The distribution for these subcategories can be seen in the following plot.                      
             </p>
             <p>
-                <b>Please hover each plot to investigate them yourself!</b>
+                <b>Please hover over each plot to investigate them yourself!</b>
             </p>
             <figure class ="distributionFigure">
                 <embed type="image/svg+xml" src="img/fats_distribution.svg" />
             </figure>
             <p>
-                The distribution plot shows that France has more different oils and butter while the US
-                stand out with a considerably higher percentage of peanut butters. As a side-note 
+                The distribution plot shows that France has more different types of oil and butter while the US
+                stands out with a considerably higher percentage of peanut butter. As a side-note 
                 we can also see that over half of the oils in France are olive oil, while olive oil 
                 only corresponds to less than a fourth of the oils in the US.
             </p>
             <p>
-                When studying fat it is really the relation between saturated fat and unsaturated fat one 
-                are interesting in. Studies have shown that unsaturated fats have a positive effect on health 
+                When studying fat it is really the relation between saturated fat and unsaturated fat that 
+                are interesting. Studies have shown that unsaturated fats have a positive effect on health 
                 issues and reduces the blood cholesterol levels, but they also suggest that saturated fat have 
-                the opposite effect. In the following plots we therefor investigate these fats further. 
+                the opposite effect. In the following plots we therefore further investigate these fats. 
             </p>
             <div class="nutri-dropdown">
                 <button class="dropbtn">
@@ -218,7 +217,7 @@
                 </figure>
             </div>
             <p>
-                Here we see clearly that the US has France has a higher amount of saturated fat, 
+                Here we clearly see that France has a higher amount of saturated fat, 
                 while the US has a higher amount of both monounsaturated fat and polyunsaturated fat. 
                 Maybe the higher amount of nut butter and still a high amount of oil helps the US get 
                 these good values. Anyway, this gives <b>US</b> the first point of this competition!
@@ -273,10 +272,10 @@
                     </figure>
                  </div>
             <p>
-                    The plot for carbohydrates shows that products from US seems to contain much more per 100g 
+                    The plot for carbohydrates shows that products from the US seems to contain much more per 100g 
                     than the products from France. This observation could, as mentioned in the introduction of this category, be 
                     explained by that the different countries prepare the food differently. A common prejudice is that
-                    US products often are fried in oil, have a larger amount of sauces, have more marinated items or more items that comes
+                    products from the US are often fried in oil, have a larger amount of sauces, have more marinated items or more items that comes
                     wrapped in bread. Maybe this observation could support that theory? Let’s dig deeper and look at the amount of fat per 100g. Here we can see that the values for the US are actually lower than for France, 
                     which contradicts the hypothesis. 
        
@@ -310,25 +309,26 @@
         <div id="dairy">
             <h2>Dairy</h2>
             <p>
-                So far the competition is still open, but we won’t stop here, let’s continue with the dairy products. 
+                So far the competition is still open, we won’t stop here, let’s continue with the dairy products. 
             </p>
             <p>
-                This category consists of for example yoghurt, milk or cheese. To get a feeling for the different kinds of subcategories have a look at the distribution.
-                Since we already covered the fats, butter have been removed from this category.
+                This category consists of for example yoghurt, milk or cheese. To get a feeling for the different kinds of subcategories, we take a look at their distribution.
+                Since we already covered the fats, butter has been removed from this category.
             </p>
             <figure class="plots">
                     <embed type="image/svg+xml" src="img/dairy_distribution.svg" />
             </figure>
             <p> 
                 The distribution of the products within dairy shows that a large portion of the dairy items in both 
-                the US and France are cheese-related items. As an interesting side-note please hover the cheese bar.
-                The distribution also shows that the US has almost the double amount of ice cream compared to France, 
+                the US and France are cheese-related items. For an interesting side-note, hover over the cheese bar.
+                The distribution also shows that the US has almost double the amount of ice cream compared to France, 
                 and that France has almost double the amount 
-                of milk compared to the US. 
+                of milk compared to the US.
             </p>
             <p>
-                We now take a look at the nutrients. Firstly, one radar plot for sugar, carbohydrates, proteins, fat and the different types of fat, e.g. saturated, monounsaturated or polyunsaturated fat.
-                Secondly one regular bar plot for sodium and calcium. In the radar plot, the values
+                We now take a look at the nutrients. Firstly, one radar plot for sugar, carbohydrates, proteins, fat and the different types of fat,
+                e.g. saturated, monounsaturated or polyunsaturated fat.
+                Secondly, one regular bar plot for sodium and calcium. In the radar plot, the values
                 are given in grams and are of equal size, while in the plot for sodium and calcium, 
                 the values are given as a fraction of the recommended daily intake. 
             </p>
@@ -339,9 +339,10 @@
                 <embed type="image/svg+xml" src="img/dairy_nutri_small.svg" />
             </figure>
             <p>
-                Even though the US have both more unsaturated fat and proteins in their dairy food it still doesn’t compensate the fact that their food also contains twice as mush saturated fat, sugar and carbohydrates. The food from France have a lower amount of sodium and more calcium. 
+                Even though the US have both more unsaturated fat and proteins in their dairy food it still doesn’t compensate for the fact that their food also
+                contains twice as much saturated fat, sugar and carbohydrates. The food from France has a lower amount of sodium and more calcium. 
                 
-                These are all the reasons why this round goes to <b>France</b>.    
+                These are all reasons why this round goes to <b>France</b>.    
             </p>
         </div>
     </div>
@@ -351,8 +352,8 @@
             <h2>Bread</h2>
             Now it is time for round 4! <br>
             In this category we compare the breads between the two countries.
-            This does not include cookies, biscuits and sugary snacks made of grains.
-            The first discovery made was there is a higher number of bread-related items in
+            This does not include cookies, biscuits and sugary snacks made from grains.
+            The first discovery made was that there is a higher number of bread-related items in
             the US compared to France, <i>5404</i> compared to <i>3107</i>. 
             Maybe the local bakeries in France is the reason for this? In France it is common
             to go and buy fresh bread in a bakery instead of going to the supermarket. 
@@ -394,8 +395,8 @@
                 </figure>
              </div>
         <p>
-            When comparing the bread products, it is possible to see that the energy values are very similar. 
-            However, when it comes to carbohydrates, the bread from US definitely contains more. 
+            When comparing the bread products, it can be seen that the energy values are very similar. 
+            However, when it comes to carbohydrates, the bread from the US definitely contains more. 
             Nevertheless, the French bread is not all perfect. In fact, the bread items from US have less
             sugar per 100g than bread from France. This is unexpected, since carbohydrates and sugars often
             correlate. An explanation could be that France has more light bread with more white sugar than the US, 
